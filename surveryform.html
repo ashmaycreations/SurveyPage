@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	body {
+		width: 100%;
+		background-color: #a3a7af;
+	}
+	#boxOne {
+		width: 45%;
+		height: 200px;
+		float: left;
+		color: #edf2f9;
+		background-color: #414244;
+	}
+	#boxTwo {
+		width: 45%;
+		height: 200px;
+		float: left;
+		color: #edf2f9;
+		background-color: #414244;
+	}
+	#submit {
+		margin-top: 130px;
+		margin-left: 520px;
+		padding: auto;
+		font-size: 35px;
+		background-color: #414244;
+		color: #edf2f9;
+	}
+	#reset {
+		font-size: 35px;
+		background-color: #414244;
+		color: #edf2f9;
+	}
+
+
+
+</style>
+</head>
+<body>
+	<h1 id="title">Survey Form</h1>
+	<fieldset id="boxOne"> <!-- Box One Starts Here -->
+		<legend>Who You Are:</legend>
+		<form id="survey-form" action="" method="get">
+		<select name="gender">
+			<option value="select">Please Select</option>
+			<option value="male">Male</option>
+			<option value="Female">Female</option>
+			<option value="unk">Other/Unknown</option>
+		</select>
+		<br><br>
+		First Name: <input type="text" id="firstName" value="Jane" required>
+		<br>
+		Last Name:  <input type="text" id="lastName" value="Doe" required>
+		<br>
+		Email:  <input type="text" id="email" value="JaneDoe@example.com" required>
+		<br>
+		Valid Phone: <input type="tel" id="number" value="000-000-0000"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       required>
+		 <select name="number" required>
+			<option value="home">Home</option>
+			<option value="cell">Cell</option>
+			<option value="work">Work</option>
+		</select>
+	</fieldset>
+		<br><br>
+		<fieldset id="boxTwo"> <!-- Box Two Starts Here -->
+			<legend>Getting To Know You Better</legend>
+			Select what best fits you. <br>
+		<select name="dropdown" id="dropdown" required>
+			<option value="confident">Confident</option>
+			<option value="questionable">Questionable</option>
+			<option value="selfconcious">Self-Conscious</option>
+			<option value="needwork">Need Some Work</option>
+		</select>
+		<br><br>
+		On a Scale of 1 - 10 (10 being the highest). How Spiritual are you?
+		<br>
+		<form action="" id="scale" required>
+			1<input type="radio" name="one" value="one">
+			2<input type="radio" name="two" value="two">
+			3<input type="radio" name="three" value="three">
+			4<input type="radio" name="four" value="four">
+			5<input type="radio" name="five" value="five">
+			6<input type="radio" name="six" value="six">
+			7<input type="radio" name="seven" value="seven">
+			8<input type="radio" name="eight" value="eight">
+			9<input type="radio" name=nine" value="nine">
+			10<input type="radio" name="ten" value="ten">
+			<br><br>
+		Favorite Colors:
+			<br>
+		<input type="checkbox" id="checkbox" name="na"checked>
+			<label for="na">No Answer</label>
+		<input type="checkbox" id="checkbox" name="pink">
+			<label for="pink">Pink</label>
+		<input type="checkbox" id="checkbox" name="blue">
+			<label for="blue">Blue</label>
+		<input type="checkbox" id="checkbox" name="purple">
+			<label for="purple">Purple</label>
+		<input type="checkbox" id="checkbox" name="green">
+			<label for="green">Green</label>
+		<input type="checkbox" id="checkbox" name="orange">
+			<label for="orange">Orange</label>
+		<input type="checkbox" id="checkbox" name="red">
+			<label for="red">Red</label>
+		<input type="checkbox" id="checkbox" name="brown">
+			<label for="brown">Brown</label>
+		<input type="checkbox" id="checkbox" name="other">
+			<label for="other">Other/Not Listed</label>
+		</fieldset>
+			<br><br>
+		<input id="submit" type="submit" value="Submit">
+		<input id="reset" type="reset" value="Reset">
+	</form>
+
+
+
+
+
+
+</body>
+</html>
