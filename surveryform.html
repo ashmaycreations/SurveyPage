@@ -5,25 +5,43 @@
 <style>
 	body {
 		width: 100%;
-		background-color: #a3a7af;
+		background-color: #565a67;
 	}
 	#boxOne {
-		width: 45%;
+		width: 47%;
 		height: 200px;
 		float: left;
 		color: #edf2f9;
 		background-color: #414244;
 	}
 	#boxTwo {
-		width: 45%;
+		width: 47%;
 		height: 200px;
+		float: right;
+		color: #edf2f9;
+		background-color: #414244;
+		margin-top: 100px;
+	}
+	#boxThree {
+		width: 47%;
+		height: 370px;
 		float: left;
 		color: #edf2f9;
 		background-color: #414244;
+		margin-top: 80px;
+	}
+	#boxFour {
+		width: 47%;
+		height: 300px;
+		float: right;
+		color: #edf2f9;
+		background-color: #414244;
+		margin-top: 120px;
+
 	}
 	#submit {
 		margin-top: 130px;
-		margin-left: 520px;
+		margin-left: 430px;
 		padding: auto;
 		font-size: 35px;
 		background-color: #414244;
@@ -33,6 +51,12 @@
 		font-size: 35px;
 		background-color: #414244;
 		color: #edf2f9;
+
+	}
+	#title {
+		color: #edf2f9;
+		text-align: center;
+		padding-bottom: 60px;
 	}
 
 
@@ -41,8 +65,8 @@
 </head>
 <body>
 	<h1 id="title">Survey Form</h1>
-	<fieldset id="boxOne"> <!-- Box One Starts Here -->
-		<legend>Who You Are:</legend>
+	<fieldset id="boxOne"> 				<!-- Box One Starts Here -->
+		<legend>1-Who You Are:</legend>
 		<form id="survey-form" action="" method="get">
 		<select name="gender">
 			<option value="select">Please Select</option>
@@ -51,12 +75,15 @@
 			<option value="unk">Other/Unknown</option>
 		</select>
 		<br><br>
+		<hr>
 		First Name: <input type="text" id="firstName" value="Jane" required>
 		<br>
 		Last Name:  <input type="text" id="lastName" value="Doe" required>
 		<br>
+		<hr>
 		Email:  <input type="text" id="email" value="JaneDoe@example.com" required>
 		<br>
+		<hr>
 		Valid Phone: <input type="tel" id="number" value="000-000-0000"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
        required>
 		 <select name="number" required>
@@ -66,8 +93,8 @@
 		</select>
 	</fieldset>
 		<br><br>
-		<fieldset id="boxTwo"> <!-- Box Two Starts Here -->
-			<legend>Getting To Know You Better</legend>
+		<fieldset id="boxTwo"> 			<!-- Box Two Starts Here -->
+			<legend>2-Getting To Know You Better</legend>
 			Select what best fits you. <br>
 		<select name="dropdown" id="dropdown" required>
 			<option value="confident">Confident</option>
@@ -102,6 +129,7 @@
 			<label for="purple">Purple</label>
 		<input type="checkbox" id="checkbox" name="green">
 			<label for="green">Green</label>
+			<br>
 		<input type="checkbox" id="checkbox" name="orange">
 			<label for="orange">Orange</label>
 		<input type="checkbox" id="checkbox" name="red">
@@ -112,6 +140,131 @@
 			<label for="other">Other/Not Listed</label>
 		</fieldset>
 			<br><br>
+		<fieldset id="boxThree"> 			<!-- Box Three Starts Here -->
+		<legend>3-The More We Know</legend>
+		On a Scale of 1 - 10 (10 being the highest). How would you rate your daily activity?
+		<br>
+		<hr>
+		<form action="" id="scale" required>
+			1<input type="radio" name="one" value="one">
+			2<input type="radio" name="two" value="two">
+			3<input type="radio" name="three" value="three">
+			4<input type="radio" name="four" value="four">
+			5<input type="radio" name="five" value="five">
+			6<input type="radio" name="six" value="six">
+			7<input type="radio" name="seven" value="seven">
+			8<input type="radio" name="eight" value="eight">
+			9<input type="radio" name=nine" value="nine">
+			10<input type="radio" name="ten" value="ten">
+		<br><br>
+		<hr>
+		On a Scale of 1 - 10 (10 being the highest). How would you rate your sleepiness level?
+		<br>
+		<form action="" id="scale" required>
+			1<input type="radio" name="one" value="one">
+			2<input type="radio" name="two" value="two">
+			3<input type="radio" name="three" value="three">
+			4<input type="radio" name="four" value="four">
+			5<input type="radio" name="five" value="five">
+			6<input type="radio" name="six" value="six">
+			7<input type="radio" name="seven" value="seven">
+			8<input type="radio" name="eight" value="eight">
+			9<input type="radio" name=nine" value="nine">
+			10<input type="radio" name="ten" value="ten">
+			<br><br>
+			<hr>
+		On a Scale of 1 - 10 (10 being the highest). How would you rate yourself overall?
+		<br>
+		<form action="" id="scale" required>
+			1<input type="radio" name="one" value="one">
+			2<input type="radio" name="two" value="two">
+			3<input type="radio" name="three" value="three">
+			4<input type="radio" name="four" value="four">
+			5<input type="radio" name="five" value="five">
+			6<input type="radio" name="six" value="six">
+			7<input type="radio" name="seven" value="seven">
+			8<input type="radio" name="eight" value="eight">
+			9<input type="radio" name=nine" value="nine">
+			10<input type="radio" name="ten" value="ten">
+			<br><br>
+			<hr>
+		On a Scale of 1 - 10 (10 being the highest). How would you rate your satisfactory?
+		<br>
+		<form action="" id="scale" required>
+			1<input type="radio" name="one" value="one">
+			2<input type="radio" name="two" value="two">
+			3<input type="radio" name="three" value="three">
+			4<input type="radio" name="four" value="four">
+			5<input type="radio" name="five" value="five">
+			6<input type="radio" name="six" value="six">
+			7<input type="radio" name="seven" value="seven">
+			8<input type="radio" name="eight" value="eight">
+			9<input type="radio" name=nine" value="nine">
+			10<input type="radio" name="ten" value="ten">
+			<br><br>
+		</fieldset>
+				<fieldset id="boxFour"> 			<!-- Box Four Starts Here -->
+			<legend>4-Last Few Questions</legend>
+			Income Level <br>
+		<select name="dropdown" id="dropdown" required>
+			<option value="confident">$0 - $10,000</option>
+			<option value="questionable">$10,001 - $25,000</option>
+			<option value="selfconcious">$25,001 - $35,000</option>
+			<option value="needwork">$35,001 - $65,000</option>
+			<option value="needwork">$65,001+</option>
+		</select>
+		<br><br><hr>
+		Favorite Hobbies:
+			<br>
+		<input type="checkbox" id="checkbox" name="na"checked>
+			<label for="na">No Answer</label>
+		<input type="checkbox" id="checkbox" name="gaming">
+			<label for="pink">Gaming</label>
+		<input type="checkbox" id="checkbox" name="sew">
+			<label for="blue">Crochet/Sewing</label>
+		<input type="checkbox" id="checkbox" name="coding">
+			<label for="purple">Computer Programming</label>
+		<input type="checkbox" id="checkbox" name="invest">
+			<label for="green">Investing</label>
+			<br>
+		<input type="checkbox" id="checkbox" name="collecting">
+			<label for="orange">Collecting</label>
+		<input type="checkbox" id="checkbox" name="cooking">
+			<label for="red">Baking/Cooking</label>
+		<input type="checkbox" id="checkbox" name="shopping">
+			<label for="brown">Shopping</label>
+			<input type="checkbox" id="checkbox" name="movie">
+			<label for="brown">Movie Watching</label>
+		<input type="checkbox" id="checkbox" name="travel">
+			<label for="brown">Traveling</label>
+			<br>
+		<input type="checkbox" id="checkbox" name="other">
+			<label for="other">Other/Not Listed</label>
+			<br><br>
+			<hr>
+		Favorite Music
+			<br>
+		<input type="checkbox" id="checkbox" name="na"checked>
+			<label for="na">No Answer</label>
+		<input type="checkbox" id="checkbox" name="pink">
+			<label for="pink">HipHop/Rap</label>
+		<input type="checkbox" id="checkbox" name="blue">
+			<label for="blue">Blues</label>
+		<input type="checkbox" id="checkbox" name="purple">
+			<label for="purple">EDM</label>
+		<input type="checkbox" id="checkbox" name="green">
+			<label for="green">Pop</label>
+			<br>
+		<input type="checkbox" id="checkbox" name="orange">
+			<label for="orange">Rock n Roll</label>
+		<input type="checkbox" id="checkbox" name="red">
+			<label for="red">Reggae</label>
+		<input type="checkbox" id="checkbox" name="brown">
+			<label for="brown">Latino</label>
+		<input type="checkbox" id="checkbox" name="other">
+			<label for="other">Other/Not Listed</label>
+		</fieldset>
+		<br><br>
 		<input id="submit" type="submit" value="Submit">
 		<input id="reset" type="reset" value="Reset">
 	</form>
